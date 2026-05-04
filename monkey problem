@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter the value for n,k,j,m,p");
+
+        int n = sc.nextInt();
+        int k = sc.nextInt();
+        int j = sc.nextInt();
+        int m = sc.nextInt();
+        int p = sc.nextInt();
+        int mbanana = m / k;
+        int mpeanut = p / j;
+        int mfed=mbanana+mpeanut;
+        if(m%k!=0 || p%j!=0)
+       {
+        mfed=mfed+1;
+        }
+        int mleft=n-mfed;
+            System.out.println("Number of Monkeys left on the tree:" + mleft);
+        
+    }
+}
