@@ -1,0 +1,28 @@
+class Main {
+    public static void main(String[] args) {
+        int a=1;
+        int b =5;
+        int c=3;
+        {
+        int temp=a;
+        a=b;
+        b=temp;
+        }
+        { 
+            int temp=b;
+            b=c;
+            c=temp;
+        }
+        {
+            int temp=c;
+            c=a;
+            a=temp;
+            
+        }
+        System.out.println("after swapping:");  
+        System.out.println("a="+a); 
+        System.out.println("b="+b); 
+        System.out.println("c="+c); 
+        
+    }
+}
