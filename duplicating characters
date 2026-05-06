@@ -1,0 +1,21 @@
+
+import java.util.HashMap;
+import java.util.Collections;
+class Main {
+    public static void main(String args[]) {
+        String S="hello";
+        HashMap<Character,Integer> k = new HashMap <>();
+         for(char c:S.toCharArray())
+         {
+             if(k.containsKey(c))
+             {
+                 k.put(c,k.get(c)+1);
+             }
+            else
+            {
+                k.put(c,1);
+             }
+         }
+         System.out.println(k);
+    }
+}
