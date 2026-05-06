@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+class Main {
+    public static void main(String args[]) {
+       ArrayList<String>list=new ArrayList< >();
+       list.add("java");
+        list.add("python");
+         list.add("java");
+         System.out.println(list);
+            System.out.println(list.get(0));
+            list.add(0,"lia");
+              System.out.println(list);
+              list.set(2,"ada");
+                System.out.println(list);
+                list.remove(3);
+                  System.out.println(list);
+                  list.clear();
+                    System.out.println(list);
+       }
+}
+        
