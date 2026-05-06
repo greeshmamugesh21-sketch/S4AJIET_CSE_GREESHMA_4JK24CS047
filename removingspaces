@@ -1,0 +1,19 @@
+import java.util.HashMap;
+import java.util.Arrays;
+
+
+class Main {
+    public static void main(String args[]) {
+        String S1="hello world";
+        String S2="";
+        StringBuilder k=new StringBuilder();
+        for(char j:S1.toCharArray()){
+        if(!Character.isWhitespace(j)){
+            k.append(j);
+        }
+    }
+    
+            String m =k.toString();
+            System.out.println(m);
+        }
+    }      
